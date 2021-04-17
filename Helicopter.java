@@ -2,14 +2,19 @@ package by.Lab_21.entity;
 
 public class Helicopter extends Plane{
 
-    public Helicopter(String msg, String flightNumber){
-        this.flightNumber = flightNumber;
-        if(msg == "Ми-8") {
-            numSeats = 11;
-            curCapacity = 3500;
+    public Helicopter(){
+        setCurCapacity(2500);
+        setNumSeats(5);
+    }
+
+    public Helicopter(String flightNumber){
+        setFlightNumber(flightNumber);
+        if(flightNumber == "1010") {
+            setNumSeats(15);
+            setCurCapacity(8000);
         }else{
-            numSeats = 4;
-            curCapacity = 2000;
+            setNumSeats(4);
+            setCurCapacity(2000);
         }
     }
 }
