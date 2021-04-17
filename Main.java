@@ -12,9 +12,11 @@ public class Main {
         PassengerPlane first = new PassengerPlane();
         PassengerPlane second = new PassengerPlane();
         PassengerPlane third = new PassengerPlane();
+        PassengerPlane fourth = new PassengerPlane(200,3000, "D234");
 
-        PassengerPlane [] group = {first,second,third};
-        Printer.print(String.valueOf(Engineer.calculateAllSeats(group)));
+        PassengerPlane [] group = {first,second,third,fourth};
+        Printer.print("Total seats of planes = "+Engineer.calculateAllSeats(group)+"\n");
+        Printer.print("Total Capacity of planes = "+Engineer.calculateAllCapacity(group)+" kilogrammes\n");
 
     }
 }
