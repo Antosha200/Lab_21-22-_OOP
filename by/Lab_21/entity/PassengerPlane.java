@@ -2,6 +2,14 @@ package by.Lab_21.entity;
 
 public class PassengerPlane extends Plane{
 
+    public static int passengerPlaneAmount;
+    static {
+        passengerPlaneAmount = 0;
+    }
+    {
+        passengerPlaneAmount++;
+    }
+
     public PassengerPlane(int numSeats, int CurCapacity, String flightNumber){
         setFlightNumber(flightNumber);
         setNumSeats(numSeats);

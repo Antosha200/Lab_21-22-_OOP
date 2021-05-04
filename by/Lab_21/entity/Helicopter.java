@@ -2,6 +2,14 @@ package by.Lab_21.entity;
 
 public class Helicopter extends Plane{
 
+    public static int helicopteramount;
+
+    static {
+        helicopteramount  = 0; //вызывается только один раз
+    }
+    {
+        helicopteramount++; //вызывается при создании объекта
+    }
     public Helicopter(){
         setCurCapacity(2500);
         setNumSeats(5);
