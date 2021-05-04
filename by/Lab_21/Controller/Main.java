@@ -14,6 +14,8 @@ public class Main {
         Printer.print("Total Capacity of helicopters = "+Engineer.calculateAllCapacity(groupHelicopters)+" kilogrammes\n");
         Printer.print("Amount of helicopters = "+Helicopter.helicopteramount+"\n");
 
+        int a;
+
         PassengerPlane [] groupPlanes = {new PassengerPlane(200, "10002A"), new PassengerPlane(100,20000, "B220"), new PassengerPlane()};
         Printer.print("Total seats of planes = "+Engineer.calculateAllSeats(groupPlanes)+"\n");
         Printer.print("Total Capacity of planes = "+Engineer.calculateAllCapacity(groupPlanes)+" kilogrammes\n");
